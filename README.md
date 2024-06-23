@@ -1,7 +1,7 @@
 # Drone's Software development and Hardware conception 
-<a>
-<img scr= "Prototype.jpg" border="10"/>
-</a>
+
+<img src= "Prototype.jpg" border="10"/>
+
 ## A fully functional example project of a Quadcopter conception including it's envirement (Remote controller and user interface )
 This project details the design and creation of an autonomous drone, integrating advanced hardware and software components.
 The drone is powered by an STM32F4 microcontroller, acting as the control system's core. BLDC motors provide propulsion,
