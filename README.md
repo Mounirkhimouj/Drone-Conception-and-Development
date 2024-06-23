@@ -9,3 +9,9 @@ and various sensors like the BMP280 for pressure, MPU6050 for acceleration, and 
 The software architecture includes modules for sensor data acquisition and processing, as well as control algorithms such as PI regulators and cascade techniques,
 ensuring the drone's stability and maneuverability. The practical implementation involved programming the microcontroller,
 integrating and calibrating sensors, precisely controlling the motors, and configuring the communication system.
+
+## this reposetry contains 3 parts 
+
+* The Flight controller folder wich is an STM32CubeIDE project to be uploaded to an STM32F401RE
+* The Remote controller folder wich is an Arduino Uno code
+* A Python script  that runs the GUI for usefull information and also for Automatic flight (to be added)
