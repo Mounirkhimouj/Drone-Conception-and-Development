@@ -25,6 +25,5 @@ to control properly the Quadcopter an Arduino Uno is mounted on a PCB , with 2 j
 
 # Graphical User Interface 
   We used the  GUI to adjust the PI gains , and also for future automatic control , here the control loop is composed of 2 loops , the inner loop  to control the angular velocity of the brushless and the outer loop is for the angle 
-<img src="" border = "10"/>
 <img src="Commande_des_BLDC.png" border = "10"/>
 
