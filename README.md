@@ -10,3 +10,21 @@ This project details the design and creation of an autonomous drone, integrating
 * The Flight controller folder, which is an STM32CubeIDE project to be uploaded to an STM32F401RE
 * The Remote controller folder, which is Arduino Uno code
 * A Python script that runs the GUI for useful information and also for automatic flight (to be added)
+
+# Flight Controller 
+
+the brain of the drone is the FC which is based on STM32F401RE microcontroller ,  the stm32f4 took the information from various sensor : BMP, ADC , GPS and mainly the MPU 6050 that an IMU and also the setpoints from the remote controller ,  and then based on these 2 informations the FC compute the duty cycle that needs to go to the brushless motors with the help of a PI  control loop
+<img src="FC_software.png" border = "10"/>
+<img src="drone_structure.png" border = "10"/>
+
+
+# Remote Controller
+
+to control properly the Quadcopter an Arduino Uno is mounted on a PCB , with 2 joysticks and an s2c Xbee , when joysticks are updated Aruino uno send new data to drone's FC via Xbee 
+<img src="communication_structure.png" border = "10"/>
+
+# Graphical User Interface 
+  We used the  GUI to adjust the PI gains , and also for future automatic control , here the control loop is composed of 2 loops , the inner loop  to control the angular velocity of the brushless and the outer loop is for the angle 
+<img src="" border = "10"/>
+<img src="Commande_des_BLDC.png" border = "10"/>
+
